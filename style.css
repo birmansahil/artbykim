@@ -14,11 +14,36 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Typography */
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* Container & Grid */
+
 .container {
     width: 95%;
-    max-width: 1140px;
+    max-width: 1920px;
     margin: 0 auto;
+    background-color: orange;
 }
+
+.grid {
+    display: grid;
+    grid-gap: 2rem;
+}
+
+@media screen and (min-width: 625px) {
+    .grid--1x2 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
 
 /* Nav bar */
 /* TODO: add background color to header if needed */
@@ -74,4 +99,11 @@ body {
     .nav__brand {
         order: 1;
     }
+}
+
+/* Intro */
+
+.intro__image {
+    width: 100%;
+    object-fit: cover;
 }
