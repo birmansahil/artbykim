@@ -9,8 +9,69 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    min-width: 300px;
     line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* Nav bar */
+/* TODO: add background color to header if needed */
+
+.nav {
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__brand,
+.nav__link {
+    color: #222;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav__brand {
+    font-size: 2.75rem;
+    letter-spacing: 0.125rem;
+}
+
+.nav__list {
+    margin: 1rem 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav__item:nth-child(2) {
+    margin: 0 2.5rem;
+}
+
+.nav__link {
+    font-size: 1.5rem;
+}
+
+.active {
+    border-bottom: 2px solid #222;
+}
+
+@media screen and (min-width: 625px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        margin: 0;
+    }
+
+    .nav__brand {
+        order: 1;
+    }
+}
