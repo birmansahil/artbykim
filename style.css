@@ -1,3 +1,5 @@
+/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,101 +11,33 @@ html {
 }
 
 body {
-    min-width: 300px;
-    line-height: 1.5;
+    color: #fff;
+    line-height: 1.75;
     font-family: 'Inter', sans-serif;
+    background-color: #111;
 }
 
-/* Typography */
+/* Container */
 
-h1 {
-    font-size: 4rem;
+.container {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Copyright */
+
+footer {
+    background-color: #191919;
+}
+
+.footer__copyright {
+    padding: 1rem 0;
 }
 
 p {
-    font-size: 1.5rem;
-}
-
-/* Container & Grid */
-
-.container {
-    width: 95%;
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: orange;
-}
-
-.grid {
-    display: grid;
-    grid-gap: 2rem;
-}
-
-@media screen and (min-width: 625px) {
-    .grid--1x2 {
-        grid-template-columns: 3fr 2fr;
-    }
-}
-
-
-/* Nav bar */
-/* TODO: add background color to header if needed */
-
-.nav {
-    min-height: 65px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav__brand,
-.nav__link {
-    color: #222;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.nav__brand {
-    font-size: 2.75rem;
-    letter-spacing: 0.125rem;
-}
-
-.nav__list {
-    margin: 1rem 0;
-    display: flex;
-    list-style: none;
-}
-
-.nav__item:nth-child(2) {
-    margin: 0 2.5rem;
-}
-
-.nav__link {
-    font-size: 1.5rem;
-}
-
-.active {
-    border-bottom: 2px solid #222;
-}
-
-@media screen and (min-width: 625px) {
-    .nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav__list {
-        margin: 0;
-    }
-
-    .nav__brand {
-        order: 1;
-    }
-}
-
-/* Intro */
-
-.intro__image {
-    width: 100%;
-    object-fit: cover;
+    
+    opacity: 0.6;
+    font-size: 1.25rem;
+    text-align: center;
 }
