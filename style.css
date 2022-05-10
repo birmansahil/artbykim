@@ -17,6 +17,10 @@ body {
     background-color: #111;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 /* Container */
 
 .container {
@@ -25,19 +29,45 @@ body {
     margin: 0 auto;
 }
 
+/* Links */
+
+.link {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.link--underlined {
+    border-bottom: 3px solid #fff;
+}
+
 /* Copyright */
 
 footer {
     background-color: #191919;
 }
 
-.footer__copyright {
+.copyright {
     padding: 1rem 0;
 }
 
-p {
-    
+.copyright__text {
     opacity: 0.6;
     font-size: 1.25rem;
     text-align: center;
+}
+
+/* Contact */
+
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact__heading {
+    margin-bottom: 2rem;
+}
+
+.contact__text {
+    font-size: 1.5rem;
 }
