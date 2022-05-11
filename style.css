@@ -17,6 +17,11 @@ body {
     background-color: #111;
 }
 
+h1 {
+    font-size: 4rem;
+    line-height: 1.5;
+}
+
 h2 {
     font-size: 3rem;
 }
@@ -25,7 +30,7 @@ h2 {
 
 .container {
     width: 90%;
-    max-width: 1920px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -70,4 +75,37 @@ footer {
 
 .contact__text {
     font-size: 1.5rem;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-gap: 4rem;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Hero */
+/* FIXME: put right margins depending on design */
+.hero {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.hero__heading {
+    margin-bottom: 2rem;
+}
+
+.hero__para {
+    font-size: 1.5rem;
+}
+
+.hero__image {
+    width: 100%;
 }
