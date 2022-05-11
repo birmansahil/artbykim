@@ -26,6 +26,10 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
 /* Container */
 
 .container {
@@ -107,5 +111,29 @@ footer {
 }
 
 .hero__image {
+    width: 100%;
+}
+
+/* Project */
+.project .grid {
+    grid-gap: 2rem;
+} 
+
+.project__content {
+    margin-bottom: 2rem;
+}
+
+.more-info {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.project__description {
+    font-size: 1.5rem;
+}
+
+.project__image {
     width: 100%;
 }
