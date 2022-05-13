@@ -10,9 +10,11 @@
  
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
+    min-width: 325px;
     color: #fff;
     line-height: 1.75;
     font-family: 'Inter', sans-serif;
@@ -111,10 +113,10 @@ header {
 }
 
 /* Hero */
-/* FIXME: put right margins depending on design */
+
 .hero {
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .hero__heading {
@@ -130,7 +132,7 @@ header {
 }
 
 /* Project */
-/* FIXME: put right margins depending on design */
+
 .project {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -162,7 +164,8 @@ header {
 /* Contact */
 
 .contact {
-    padding: 4rem 0;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     text-align: center;
 }
 
@@ -180,12 +183,16 @@ footer {
     background-color: #191919;
 }
 
-.copyright {
-    padding: 1rem 0;
-}
-
 .copyright__text {
+    padding: 1rem 0;
     opacity: 0.6;
     font-size: 1.25rem;
     text-align: center;
+}
+
+/* Horizontal rule */
+
+.horizontal-rule {
+    border: 1px solid #fff;
+    opacity: 0.6;
 }

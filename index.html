@@ -15,17 +15,116 @@
   </head>
   <body>
     <header>
+      <!-- Navbar -->
       <nav class="nav container">
-        <a class="link nav__brand" href="#">Bakhshi Kimia</a>
+        <a class="link nav__brand" href="#home">Bakhshi Kimia</a>
 
         <ul class="nav__list">
-          <li class="nav__item"><a class="link nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="link nav__link" href="#">Work</a></li>
           <li class="nav__item">
-            <a class="link nav__link" href="#">Instagram</a>
+            <a class="link nav__link" href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#work">Work</a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="link nav__link"
+              href="https://www.instagram.com/kimiabakhshi/"
+              target="_blank"
+              >Instagram</a
+            >
           </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="container grid grid--1x2 hero">
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            Hi, I am Kimia. <br />
+            A tattooist & art student.
+          </h1>
+          <p class="hero__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+            accusamus sint, incidunt consequatur ipsam nobis in, ipsum laborum
+            esse atque beatae consectetur inventore. Et, sit!
+          </p>
+        </div>
+
+        <picture>
+          <source type="image/webp" srcset="images/kimia.webp" />
+          <img class="hero__image" src="images/kimia.png" alt="" />
+        </picture>
+      </section>
+
+      <div class="container horizontal-rule"></div>
+
+      <!-- Projects -->
+      <section id="work" class="container project">
+        <div class="project__content grid grid--1x2">
+          <h2 class="project__heading">
+            Project 01 <span class="more-info">Why i made it</span>
+          </h2>
+          <p class="project__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellendus sapiente voluptates iure, sit tenetur quis. Nihil autem
+            vero quam illo similique aut cupiditate consectetur.
+          </p>
+        </div>
+
+        <picture>
+          <source type="image/webp" srcset="images/project.webp" />
+          <img class="project__image" src="images/project.png" alt="" />
+        </picture>
+      </section>
+
+      <div class="container horizontal-rule"></div>
+
+      <section id="work" class="container project">
+        <div class="project__content grid grid--1x2">
+          <h2 class="project__heading">
+            Project 02 <span class="more-info">Why i made it</span>
+          </h2>
+          <p class="project__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+            repellendus sapiente voluptates iure, sit tenetur quis. Nihil autem
+            vero quam illo similique aut cupiditate consectetur.
+          </p>
+        </div>
+
+        <picture>
+          <source type="image/webp" srcset="images/project.webp" />
+          <img class="project__image" src="images/project.png" alt="" />
+        </picture>
+      </section>
+
+      <div class="container horizontal-rule"></div>
+
+      <!-- Contact -->
+      <section class="container contact">
+        <h2 class="contact__heading">
+          I ocassionally take on freelance projects.
+        </h2>
+        <p class="contact__text">
+          Lorem ipsum dolor sit, amet consectetur.<br />
+          Numquam eligendi laborum minus
+          <a class="link link--underlined" href="mailto:example@example.com"
+            >write to me!</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Copyright -->
+      <section class="container copyright">
+        <p class="copyright__text">
+          All images copyrighted by Kimia Bakshi - No reproduction permitted
+          without authorization.
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
