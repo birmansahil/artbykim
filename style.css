@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* Typography */
+ 
 html {
     font-size: 62.5%;
 }
@@ -24,10 +26,6 @@ h1 {
 
 h2 {
     font-size: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
 }
 
 /* Container */
@@ -115,6 +113,12 @@ footer {
 }
 
 /* Project */
+/* FIXME: put right margins depending on design */
+.project {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
 .project .grid {
     grid-gap: 2rem;
 } 
@@ -136,4 +140,52 @@ footer {
 
 .project__image {
     width: 100%;
+}
+
+/* Navbar */
+
+header {
+    background-color: #000;
+}
+
+.nav {
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__brand,
+.nav__link {
+    font-weight: 700;
+}
+
+.nav__brand {
+    font-size: 2.75rem;
+    letter-spacing: 0.125rem;
+}
+
+.nav__list {
+    margin: 1rem 0;
+    display: flex;
+    list-style: none;
+}
+
+.nav__item:nth-child(2) {
+    margin: 0 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        margin: 0;
+    }
+
+    .nav__brand {
+        order: 1;
+    }
 }
